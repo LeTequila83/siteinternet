@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Tequila — Bar & Restaurant à Fréjus | Pizzas au feu de bois</title>
+  <meta name="description" content="Le Tequila, bar-restaurant à Fréjus (83600) : cuisine généreuse, pizzas au feu de bois à emporter, cocktails et terrasse. Ouvert tous les jours de mai à septembre, de 8h à 23h. Réservation au 06 59 89 05 70, Route de Bagnol, face au Domaine du Pin de la Lègue." />
+  <meta name="keywords" content="restaurant Fréjus, pizzeria Fréjus, pizza au feu de bois Fréjus, bar Fréjus, restaurant terrasse Fréjus, pizza à emporter Fréjus, Le Tequila, cocktails Fréjus, Route de Bagnol" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Le Tequila" />
+  <meta name="theme-color" content="#2F3623" />
+  <link rel="canonical" href="https://www.letequila.fr/" />
+
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Le Tequila" />
+  <meta property="og:title" content="Le Tequila — Bar & Restaurant à Fréjus" />
+  <meta property="og:description" content="Cuisine généreuse & pizzas au feu de bois, sous les pins de Fréjus. Ouvert tous les jours de mai à septembre." />
+  <meta property="og:image" content="https://www.letequila.fr/images/decor/illustration.jpg" />
+  <meta property="og:url" content="https://www.letequila.fr/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Le Tequila — Bar & Restaurant à Fréjus" />
+  <meta name="twitter:description" content="Pizzas au feu de bois, cocktails et terrasse à Fréjus. Ouvert tous les jours de mai à septembre." />
+  <meta name="twitter:image" content="https://www.letequila.fr/images/decor/illustration.jpg" />
+
+  <link rel="icon" href="images/logo-tequila-web.png?v=10" />
+  <link rel="apple-touch-icon" href="images/logo-tequila-web.png?v=10" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="images/decor/illustration.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=IM+Fell+English+SC&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=10" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Le Tequila",
+    "description": "Bar-restaurant à Fréjus : cuisine généreuse, pizzas au feu de bois à emporter, cocktails et terrasse.",
+    "servesCuisine": ["Française", "Méditerranéenne", "Pizza", "Cocktails"],
+    "priceRange": "€€",
+    "image": "https://www.letequila.fr/images/decor/illustration.jpg",
+    "url": "https://www.letequila.fr/",
+    "telephone": "+33659890570",
+    "acceptsReservations": "True",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2470 RD4, Route de Bagnol",
+      "addressLocality": "Fréjus",
+      "postalCode": "83600",
+      "addressCountry": "FR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 43.4408, "longitude": 6.7361 },
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Terrasse", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Accès PMR", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true }
+    ],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "08:00", "closes": "23:00",
+      "validFrom": "2026-05-01", "validThrough": "2026-09-30"
+    }]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="top">
+    <a href="#top" class="brand" aria-label="Le Tequila — accueil">
+      <img src="images/logo-tequila-web.png?v=10" alt="Logo Le Tequila, bar-restaurant à Fréjus" class="brand__logo" width="60" height="60" />
+      <span class="brand__word">Le&nbsp;Tequila</span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#apropos" data-i18n="nav.about">Le restaurant</a>
+      <a href="#carte" data-i18n="nav.menu">La carte</a>
+      <a href="#acces" data-i18n="nav.contact">Accès</a>
+    </nav>
+    <div class="header__actions">
+      <div class="lang" id="lang">
+        <button class="lang__btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false" aria-label="Choisir la langue">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg>
+          <span id="langCurrent">FR</span>
+          <svg class="lang__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <ul class="lang__menu" id="langMenu" role="listbox"></ul>
+      </div>
+      <a href="tel:+33659890570" class="btn btn--line header__book"><svg class="btn__ic" aria-hidden="true"><use href="#ic-phone"/></svg><span data-i18n="nav.book">Réserver</span></a>
+    </div>
+  </header>
+
+  <main>
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" aria-label="Le Tequila">
+    <div class="hero__media"><img src="images/decor/illustration.jpg" alt="Plat de poisson servi en terrasse au restaurant Le Tequila à Fréjus" fetchpriority="high" width="1199" height="1600" /></div>
+    <div class="hero__veil"></div>
+    <div class="hero__inner">
+      <p class="hero__badge" id="statusBadge" data-i18n="hero.badge">Ouvert tous les jours · mai → septembre</p>
+      <p class="hero__kicker" data-i18n="hero.kicker">Bar · Restaurant</p>
+      <h1 class="hero__title">Le&nbsp;Tequila</h1>
+      <p class="hero__tagline" data-i18n="hero.tagline">Cuisine généreuse &amp; pizzas au feu de bois, sous les pins de Fréjus.</p>
+      <div class="hero__cta">
+        <a href="tel:+33659890570" class="btn btn--solid btn--phone"><svg class="btn__ic" aria-hidden="true"><use href="#ic-phone"/></svg><span>06&nbsp;59&nbsp;89&nbsp;05&nbsp;70</span></a>
+        <a href="#carte" class="btn btn--ghost"><svg class="btn__ic" aria-hidden="true"><use href="#ic-menu"/></svg><span data-i18n="hero.cta_menu">Voir la carte</span></a>
+      </div>
+      <p class="hero__hint" data-i18n="phone.sub">Réserver une table ou commander vos pizzas à emporter</p>
+    </div>
+  </section>
+
+  <!-- ===================== PRÉSENTATION ===================== -->
+  <section class="about" id="apropos" aria-label="Le restaurant">
+    <div class="about__inner">
+      <p class="kicker" data-i18n="about.kicker">Le restaurant</p>
+      <h2 data-i18n="about.title">Une table conviviale, sous les pins</h2>
+      <p class="about__text" data-i18n="about.text">Au Tequila, on partage une cuisine généreuse et de saison — pizzas au feu de bois, viandes, poissons, salades et cocktails maison — à déguster en terrasse, face au Domaine du Pin de la Lègue à Fréjus.</p>
+      <ul class="about__feats">
+        <li data-i18n="about.f1">Pizzas au feu de bois</li>
+        <li data-i18n="about.f2">Terrasse sous les pins</li>
+        <li data-i18n="about.f3">Cocktails maison</li>
+      </ul>
+      <p class="about__hours" data-i18n="about.hours">Ouvert tous les jours de mai à septembre — midi (12h – 14h30) et soir (19h – 22h30).</p>
+    </div>
+  </section>
+
+  <!-- ===================== LA CARTE (app) ===================== -->
+  <section class="menu" id="carte" aria-label="La carte">
+    <div class="section-head">
+      <p class="kicker" data-i18n="menu.kicker">La carte</p>
+      <h2 data-i18n="menu.title">Explorez la carte</h2>
+      <p class="lead" data-i18n="menu.subtitle">Choisissez une catégorie ou recherchez un plat.</p>
+    </div>
+
+    <div class="menu__search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input type="search" id="menuSearch" placeholder="Rechercher…" aria-label="Rechercher un plat" />
+    </div>
+
+    <div class="menu__grid" id="menuGrid"></div>
+
+    <div class="menu__detail" id="menuDetail" hidden>
+      <div class="detail__head">
+        <button class="menu__back" id="menuBack" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+          <span data-i18n="menu.back">Toutes les catégories</span>
+        </button>
+        <span class="detail__title" id="detailTitle"></span>
+      </div>
+      <div id="menuDetailBody"></div>
+    </div>
+
+    <div class="menu__results" id="menuResults" hidden></div>
+    <p class="menu__empty" id="menuEmpty" hidden data-i18n="menu.empty">Aucun plat ne correspond.</p>
+    <p class="menu__foot" data-i18n="menu.season">✷ Disponible du 1ᵉʳ juillet au 31 août.</p>
+  </section>
+
+  <!-- ===================== PIZZAS À EMPORTER ===================== -->
+  <section class="take" aria-label="Pizzas à emporter">
+    <div class="take__inner">
+      <p class="kicker kicker--light"><svg class="kicker__ic" aria-hidden="true"><use href="#ic-pizza"/></svg><span data-i18n="take.kicker">À emporter</span></p>
+      <h2 data-i18n="take.title">Nos pizzas au feu de bois, à emporter</h2>
+      <p class="lead lead--light" data-i18n="take.text">Pâte fine, feu de bois et produits de saison. Un appel suffit, on prépare tout.</p>
+
+      <a href="tel:+33659890570" class="take__phone" aria-label="Appeler le 06 59 89 05 70">
+        <svg class="take__phone-ic" aria-hidden="true"><use href="#ic-phone"/></svg>
+        <span class="take__phone-txt">
+          <span class="take__phone-num">06 59 89 05 70</span>
+          <span class="take__phone-sub" data-i18n="phone.sub">Réserver une table ou commander vos pizzas à emporter</span>
+        </span>
+      </a>
+
+      <div class="take__btns">
+        <button type="button" class="btn btn--cream" data-open-cat="pizzas"><svg class="btn__ic" aria-hidden="true"><use href="#ic-menu"/></svg><span data-i18n="take.see">Voir les pizzas</span></button>
+      </div>
+
+      <p class="take__loyalty" data-i18n="take.loyalty">Carte de fidélité : 10 pizzas achetées, la 11ᵉ offerte.</p>
+    </div>
+  </section>
+
+  <!-- ===================== ACCÈS ===================== -->
+  <section class="access" id="acces" aria-label="Accès et contact">
+    <div class="section-head">
+      <p class="kicker" data-i18n="contact.kicker">Accès &amp; contact</p>
+      <h2 data-i18n="contact.title">On vous attend</h2>
+    </div>
+    <address class="access__rows">
+      <div class="access__item">
+        <span class="access__k" data-i18n="contact.addr">Adresse</span>
+        <span class="access__v">2470 RD4, Route de Bagnol — 83600 Fréjus</span>
+        <span class="access__s" data-i18n="contact.addr_hint">En face du Domaine du Pin de la Lègue, à Fréjus.</span>
+      </div>
+      <a class="access__item access__item--link" href="tel:+33659890570">
+        <span class="access__k" data-i18n="contact.phone">Téléphone</span>
+        <span class="access__v">06 59 89 05 70</span>
+      </a>
+      <div class="access__item">
+        <span class="access__k" data-i18n="contact.hours">Horaires</span>
+        <span class="access__v" data-i18n="contact.hours_val" style="white-space:pre-line">Tous les jours (mai → sept.)
+Midi 12h – 14h30 · Soir 19h – 22h30</span>
+      </div>
+      <div class="access__item">
+        <span class="access__k" data-i18n="contact.services">Services</span>
+        <span class="access__v info__services">
+          <span data-i18n="svc.pmr">Accès PMR</span>
+          <span data-i18n="svc.terrace">Terrasse</span>
+          <span data-i18n="svc.wifi">Wi-Fi</span>
+        </span>
+      </div>
+    </address>
+    <div class="access__cta">
+      <a class="btn btn--solid" href="https://www.google.com/maps/dir/?api=1&destination=2470+RD4+Route+de+Bagnol+83600+Fréjus" target="_blank" rel="noopener" data-i18n="contact.directions">Itinéraire</a>
+      <a class="btn btn--line btn--line-dark" href="tel:+33659890570" data-i18n="contact.call">Appeler le restaurant</a>
+    </div>
+  </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <img src="images/logo-tequila-web.png?v=10" alt="Le Tequila" class="footer__logo" width="88" height="88" />
+    <p class="footer__tag" data-i18n="footer.tagline">Bar · Restaurant — Pizzas au feu de bois</p>
+    <div class="footer__cols">
+      <a href="tel:+33659890570">06 59 89 05 70</a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=2470+RD4+Route+de+Bagnol+83600+Fréjus" target="_blank" rel="noopener">2470 RD4, Route de Bagnol · 83600 Fréjus</a>
+    </div>
+    <p class="footer__legal" data-i18n="footer.legal">L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
+    <p class="footer__copy">© <span id="year">2025</span> Le Tequila · <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+  </footer>
+
+  <!-- ===================== BARRE MOBILE ===================== -->
+  <nav class="bottombar" aria-label="Actions rapides">
+    <a href="tel:+33659890570" class="bottombar__item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5c0 8 7 15 15 15l0-3.5-4-1.5-2 2c-2.5-1.2-4.8-3.5-6-6l2-2-1.5-4L4 5z"/></svg>
+      <span data-i18n="bar.call">Appeler</span>
+    </a>
+    <a href="#carte" class="bottombar__item bottombar__item--mid">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg>
+      <span data-i18n="bar.menu">La carte</span>
+    </a>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=2470+RD4+Route+de+Bagnol+83600+Fréjus" target="_blank" rel="noopener" class="bottombar__item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      <span data-i18n="bar.directions">Itinéraire</span>
+    </a>
+  </nav>
+
+  <!-- ===================== SPRITE ICÔNES ===================== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="ic-phone" viewBox="0 0 24 24"><path d="M4 5c0 8 7 15 15 15l0-3.5-4-1.5-2 2c-2.5-1.2-4.8-3.5-6-6l2-2-1.5-4L4 5z"/></symbol>
+    <symbol id="ic-pizza" viewBox="0 0 24 24"><path d="M12 3 3 20l9-2 9 2zM10 9h.01M13 13h.01"/></symbol>
+    <symbol id="ic-menu" viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></symbol>
+    <symbol id="ic-arrow" viewBox="0 0 24 24"><path d="M5 12h13M12 5l7 7-7 7"/></symbol>
+    <symbol id="ic-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="ic-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  </svg>
+
+  <script src="js/data.js?v=10"></script>
+  <script src="js/main.js?v=10"></script>
+</body>
+</html>
