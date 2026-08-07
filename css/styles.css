@@ -261,6 +261,12 @@ address{font-style:normal;}
 .footer__cols{display:flex;flex-direction:column;gap:.5rem;margin:1.4rem 0;}
 .footer__cols a{color:rgba(249,244,237,.84);font-size:.92rem;transition:color .3s;}
 .footer__cols a:hover{color:var(--sage-soft);}
+.footer__social{display:flex;justify-content:center;gap:.8rem;margin:0 0 1.6rem;}
+.footer__social a{width:40px;height:40px;display:flex;align-items:center;justify-content:center;
+  border:1px solid rgba(249,244,237,.3);border-radius:var(--r);color:rgba(249,244,237,.86);
+  transition:background-color .3s,border-color .3s,color .3s,transform .3s var(--ease);}
+.footer__social a:hover{background:rgba(249,244,237,.1);border-color:var(--cream);color:var(--cream);transform:translateY(-2px);}
+.footer__social svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;}
 .footer__legal{font-size:.74rem;color:rgba(249,244,237,.48);max-width:46ch;margin:0 auto 1rem;}
 .footer__copy{font-size:.79rem;color:rgba(249,244,237,.58);margin:0;}
 
