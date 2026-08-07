@@ -1,0 +1,13 @@
+{
+  "name": "Le Tequila — Bar & Restaurant à Fréjus",
+  "short_name": "Le Tequila",
+  "description": "Bar-restaurant à Fréjus : pizzas au feu de bois, cocktails et terrasse.",
+  "lang": "fr",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F9F4ED",
+  "theme_color": "#2F3623",
+  "icons": [
+    { "src": "images/logo-tequila-web.png", "sizes": "480x480", "type": "image/png", "purpose": "any" }
+  ]
+}

@@ -10,13 +10,25 @@
   <meta name="author" content="Le Tequila" />
   <meta name="theme-color" content="#2F3623" />
   <link rel="canonical" href="https://letequila.com/" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- Référencement local -->
+  <meta name="geo.region" content="FR-83" />
+  <meta name="geo.placename" content="Fréjus" />
+  <meta name="geo.position" content="43.4408;6.7361" />
+  <meta name="ICBM" content="43.4408, 6.7361" />
 
   <meta property="og:type" content="restaurant" />
   <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="de_DE" />
   <meta property="og:site_name" content="Le Tequila" />
   <meta property="og:title" content="Le Tequila — Bar & Restaurant à Fréjus" />
   <meta property="og:description" content="Cuisine généreuse & pizzas au feu de bois, sous les pins de Fréjus. Ouvert tous les jours de mai à septembre." />
   <meta property="og:image" content="https://letequila.com/images/decor/illustration.jpg" />
+  <meta property="og:image:alt" content="Plat servi en terrasse au restaurant Le Tequila à Fréjus" />
   <meta property="og:url" content="https://letequila.com/" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Le Tequila — Bar & Restaurant à Fréjus" />
@@ -35,18 +47,33 @@
   {
     "@context": "https://schema.org",
     "@type": "Restaurant",
+    "@id": "https://letequila.com/#restaurant",
     "name": "Le Tequila",
-    "description": "Bar-restaurant à Fréjus : cuisine généreuse, pizzas au feu de bois à emporter, cocktails et terrasse.",
-    "servesCuisine": ["Française", "Méditerranéenne", "Pizza", "Cocktails"],
-    "priceRange": "€€",
-    "image": "https://letequila.com/images/decor/illustration.jpg",
+    "alternateName": "Le Tequila Fréjus",
+    "description": "Bar-restaurant à Fréjus : cuisine généreuse et de saison, pizzas au feu de bois à emporter, viandes, poissons, salades, cocktails maison et terrasse. Ouvert tous les jours de mai à septembre.",
+    "slogan": "Cuisine généreuse & pizzas au feu de bois, sous les pins de Fréjus.",
     "url": "https://letequila.com/",
+    "logo": "https://letequila.com/images/logo-tequila-web.png",
+    "image": [
+      "https://letequila.com/images/decor/illustration.jpg",
+      "https://letequila.com/images/cat/pizzas.jpg",
+      "https://letequila.com/images/cat/cocktails.jpg"
+    ],
     "telephone": "+33659890570",
+    "email": "",
+    "servesCuisine": ["Française", "Méditerranéenne", "Pizza au feu de bois", "Cocktails", "Bar"],
+    "priceRange": "€€",
+    "currenciesAccepted": "EUR",
+    "paymentAccepted": "Espèces, Carte bancaire",
     "acceptsReservations": "True",
+    "menu": "https://letequila.com/#carte",
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=2470+RD4+Route+de+Bagnol+83600+Fréjus",
+    "areaServed": ["Fréjus", "Saint-Raphaël", "Var", "Côte d'Azur"],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "2470 RD4, Route de Bagnol",
       "addressLocality": "Fréjus",
+      "addressRegion": "Provence-Alpes-Côte d'Azur",
       "postalCode": "83600",
       "addressCountry": "FR"
     },
@@ -54,14 +81,38 @@
     "amenityFeature": [
       { "@type": "LocationFeatureSpecification", "name": "Terrasse", "value": true },
       { "@type": "LocationFeatureSpecification", "name": "Accès PMR", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true }
+      { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Pizzas à emporter", "value": true }
     ],
     "openingHoursSpecification": [{
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
       "opens": "08:00", "closes": "23:00",
       "validFrom": "2026-05-01", "validThrough": "2026-09-30"
-    }]
+    }],
+    "hasMenu": {
+      "@type": "Menu",
+      "name": "Carte Le Tequila",
+      "inLanguage": "fr",
+      "hasMenuSection": [
+        { "@type": "MenuSection", "name": "À partager" },
+        { "@type": "MenuSection", "name": "Salades" },
+        { "@type": "MenuSection", "name": "Viandes" },
+        { "@type": "MenuSection", "name": "Poissons" },
+        { "@type": "MenuSection", "name": "Burgers" },
+        { "@type": "MenuSection", "name": "Pâtes" },
+        { "@type": "MenuSection", "name": "Pizzas au feu de bois", "hasMenuItem": [
+          { "@type": "MenuItem", "name": "Marguerite", "offers": { "@type": "Offer", "price": "12.00", "priceCurrency": "EUR" } },
+          { "@type": "MenuItem", "name": "Reine", "offers": { "@type": "Offer", "price": "14.00", "priceCurrency": "EUR" } },
+          { "@type": "MenuItem", "name": "Parme", "offers": { "@type": "Offer", "price": "16.50", "priceCurrency": "EUR" } },
+          { "@type": "MenuItem", "name": "Burrata", "offers": { "@type": "Offer", "price": "18.50", "priceCurrency": "EUR" } }
+        ]},
+        { "@type": "MenuSection", "name": "Desserts & glaces" },
+        { "@type": "MenuSection", "name": "Cocktails & mocktails" },
+        { "@type": "MenuSection", "name": "Bières & vins" },
+        { "@type": "MenuSection", "name": "Softs & cafés" }
+      ]
+    }
   }
   </script>
 </head>
