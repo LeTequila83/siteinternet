@@ -70,7 +70,7 @@
     var grid = document.getElementById("menuGrid");
     grid.innerHTML = MENU.map(function (c) {
       return '<button class="cat" type="button" data-cat="' + c.id + '">' +
-               '<span class="cat__img"><img src="' + c.img + '" alt="' + c.label[lang] + '" loading="lazy" width="380" height="280"></span>' +
+               '<span class="cat__img"><img src="' + c.img + '" alt="' + c.label[lang] + ' — Le Tequila, restaurant à Fréjus" loading="lazy" width="380" height="280"></span>' +
                '<span class="cat__meta"><span class="cat__name">' + c.label[lang] + "</span>" +
                '<span class="cat__count">' + countItems(c) + "</span></span>" +
              "</button>";
